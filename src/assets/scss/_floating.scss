@@ -1,0 +1,209 @@
+:root {
+  --input-padding-x: 0;
+  --input-padding-y: .60rem;
+  --input-border-width: $input-border-width;
+  --input-color: $input-color;
+  --input-border-color: $input-border-color;
+  --input-bg: $input-bg;
+}
+
+.codigo-form {
+  .form-group {
+    position: relative;
+    text-align: left;
+    padding-top: .9rem;
+  }
+
+  .input-group-prepend {
+    height: 3.18rem;
+    button {
+      height: 3.18rem !important;
+    }
+  }
+
+  .form-group > input, .form-group > div > label {
+    padding: var(--input-padding-y) var(--input-padding-x);
+    padding-bottom: .1rem;
+  }
+
+  .form-group > label, .form-group > div > label  {
+    position: absolute;
+    top: 0.3rem;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0; /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: #aaa;
+    font-size: 12px;
+  }
+
+  .form-group > div > label {
+    left: 10px;
+  }
+
+  .form-group.col > label{
+    left: 15px;
+  }
+
+  .form-group input::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  .form-group input:-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .form-group input::-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .form-group input::-moz-placeholder {
+    color: transparent;
+  }
+
+  .form-group input::placeholder {
+    color: transparent;
+  }
+
+  .form-group input:not(:placeholder-shown) {
+    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+    padding-bottom:0;
+  }
+
+  .form-group input:placeholder-shown::placeholder {
+    color: #777;
+  }
+
+  .form-group select ~ label {
+    font-size: 12px;
+  }
+
+  .form-group {
+    .form-control {
+      font-size: 1.2rem;
+      border-color: transparent;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid rgba(0, 0, 0, .26);
+      border-radius: 0;
+      outline-style: none;
+      width: 100%;
+    }
+  }
+
+  input.form-control {
+    height: 1.3rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+  }
+
+  textarea.form-control {
+    padding-top: 1.1rem;
+    min-height: 57px;
+  }
+
+  select.form-control {
+    height: 2.4em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * .6);
+    padding-bottom: 0;
+  }
+
+  button.dropdown-toggle {
+    height: 2.78rem;
+    width: 5.2rem;
+  }
+
+  .input-group.vux-required-group .vux-required {
+    top: 1.3rem;
+  }
+
+  .form-group.input-prepend > label {
+    left: 5.2rem;
+  }
+  .input-group-append {
+    margin-top: 0.15rem;
+  }
+  .clear-button.input-group-append {
+    margin-top: 0rem;
+  }
+
+  .btn-outline-secondary.dropdown-toggle {
+    color: var(--input-color);
+    background-color: var(--input-bg);
+    background-clip: padding-box;
+    border: var(--input-border-width) solid var(--input-border-color);
+  }
+
+  .floating-label {
+    display: block;
+  }
+
+  .no-floating-label {
+    display: none !important;
+  }
+
+  .form-group {
+    .form-control:focus {
+      border-color: #2196F3;
+      border-bottom: 2px solid #2196F3;
+    }
+  }
+
+  &.floating-labels {
+    .form-group input:placeholder-shown ~ label {
+      margin-top: .5rem;
+      font-size: 16px;
+      color: transparent;
+      transition: all .2s ease-in-out;
+    }
+    .form-group input:not(:placeholder-shown) ~ label {
+      padding-top: calc(var(--input-padding-y) / 3);
+      padding-bottom: calc(var(--input-padding-y) / 3);
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    .form-group > input ~ label {
+      top: .7rem;
+    }
+    .form-group > select ~ label {
+      top: .9rem;
+    }
+  }
+
+  &.compact {
+    .form-group {
+      padding-top: 0.25rem;
+      label {
+        top:0;
+      }
+    }
+    input.form-control {
+      padding-top: .6rem;
+      padding-bottom: .3rem;
+    }
+    select.form-control {
+      height: 2.4rem;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: .4rem;
+      padding-bottom: 0;
+      option {
+        padding: 0;
+      }
+    }
+    .form-group > input ~ label {
+      top: -0.2rem;
+    }
+    .form-group > select ~ label {
+      top: 0rem;
+    }
+  }
+}
+

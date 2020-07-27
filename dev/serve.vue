@@ -1,17 +1,17 @@
 <script>
 import Vue from 'vue';
-import { CodigoFormSample } from '@/entry';
+import { CodigoForm } from '@/entry';
 
 export default Vue.extend({
   name: 'ServeDev',
   components: {
-    CodigoFormSample,
+    CodigoForm,
   }
 });
 </script>
 
 <template>
   <div id="app">
-    <codigo-form-sample />
+    <codigo-form />
   </div>
 </template>
