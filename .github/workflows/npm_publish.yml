@@ -1,7 +1,6 @@
 name: Vue Component Package
 on:
-  release:
-    types: [created]
+  push: [main]
 
 jobs:
   build:
