@@ -1,13 +1,13 @@
 {
-  "name": "codigo-form",
+  "name": "@ten/form",
   "version": "0.1.0",
   "author": "Chris Doty",
   "license": "MIT",
   "description": "",
-  "main": "dist/codigo-form.ssr.js",
-  "browser": "dist/codigo-form.esm.js",
-  "module": "dist/codigo-form.esm.js",
-  "unpkg": "dist/codigo-form.min.js",
+  "main": "dist/ten-form.ssr.js",
+  "browser": "dist/ten-form.esm.js",
+  "module": "dist/ten-form.esm.js",
+  "unpkg": "dist/ten-form.min.js",
   "files": [
     "dist/*",
     "src/**/*.vue"
@@ -54,10 +54,5 @@
   },
   "engines": {
     "node": ">=10"
-  },
-  "browserslist": [
-    "> 2%",
-    "last 2 versions",
-    "ie > 10"
-  ]
+  }
 }

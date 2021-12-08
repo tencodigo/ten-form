@@ -2,8 +2,9 @@
   <div class="form-group" :class="{'input-group':hasPrependSlot || hasAppendSlot,'input-prepend':hasPrependSlot}">
     <label :for="id" class="no-floating-label" v-if="title">{{title}}</label>
     <slot name="prepend"></slot>
-    <textarea
+    <input
       :id="id"
+      :type="type"
       :autocomplete="autocomplete"
       :disabled="readonly"
       :readonly="readonly"
@@ -12,11 +13,8 @@
       :value="content"
       @input="handleInput($event.target.value)"
       :class="controlClass"
-      ref="area"
-      @cut="delayedResize"
-      @paste="delayedResize"
-      @drop="delayedResize"
-      @keydown="delayedResize"
+      :maxlength="length"
+      :step="step"
     />
     <slot name="append"></slot>
     <label :for="id" class="floating-label" v-if="title">{{title}}</label>
@@ -24,11 +22,11 @@
 </template>
 
 <script>
-  import CodigoWrapper from './_wrapper';
+  import TenWrapper from './ten-wrapper.vue';
 
   export default {
-    name: "codigo-textarea",
-    extends: CodigoWrapper,
+    name: "ten-input",
+    extends: TenWrapper,
     props: {
       id: {
         type: String,
@@ -65,9 +63,13 @@
         default: 'form-control'
       },
 
-      autoSize: {
+      length: {
         type: Boolean,
-        default: true
+        default: false
+      },
+      type: {
+        type: String,
+        default: 'text'
       }
     },
     data: function() {
@@ -82,20 +84,11 @@
     methods: {
       handleInput (value) {
         let val = value;
+        const t = this.type;
+        if(t==='number'){
+          val = parseInt(value);
+        }
         this.$emit('input', val);
-        this.delayedResize();
-      },
-
-      resize() {
-        if(!this.autoSize) return;
-        let text = this.$refs.area;
-        text.style.height = 'auto';
-        text.style.height = text.scrollHeight+'px';
-      },
-      delayedResize() {
-        this.$nextTick(()=>{
-          this.resize();
-        })
       }
     },
     computed: {

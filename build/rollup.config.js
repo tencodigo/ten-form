@@ -70,7 +70,7 @@ if (!argv.format || argv.format === 'es') {
     ...baseConfig,
     external,
     output: {
-      file: 'dist/codigo-form.esm.js',
+      file: 'dist/ten-form.esm.js',
       format: 'esm',
       exports: 'named',
     },
@@ -104,9 +104,9 @@ if (!argv.format || argv.format === 'cjs') {
     external,
     output: {
       compact: true,
-      file: 'dist/codigo-form.ssr.js',
+      file: 'dist/ten-form.ssr.js',
       format: 'cjs',
-      name: 'CodigoForm',
+      name: 'TenForm',
       exports: 'named',
       globals,
     },
@@ -133,9 +133,9 @@ if (!argv.format || argv.format === 'iife') {
     external,
     output: {
       compact: true,
-      file: 'dist/codigo-form.min.js',
+      file: 'dist/ten-form.min.js',
       format: 'iife',
-      name: 'CodigoForm',
+      name: 'TenForm',
       exports: 'named',
       globals,
     },

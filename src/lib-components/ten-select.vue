@@ -18,11 +18,11 @@
 </template>
 
 <script>
-  import CodigoWrapper from './_wrapper';
+  import TenWrapper from './ten-wrapper.vue';
 
   export default {
-    name: "codigo-select",
-    extends: CodigoWrapper,
+    name: "ten-select",
+    extends: TenWrapper,
     props: {
       id: {
         type: String,

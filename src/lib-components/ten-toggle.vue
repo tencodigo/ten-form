@@ -1,5 +1,5 @@
 <template>
-  <div class="codigo-toggle form-control">
+  <div class="ten-toggle form-control">
     <div class="toggle-label" v-if="title">{{title}}</div>
     <label class="toggle-container" :class="type" :for="id">
       <input :id="id" type="checkbox" class="real-checkbox" v-model="content" :true-value="trueValue" :false-value="falseValue" @change="handleInput">
@@ -10,7 +10,7 @@
 
 <script>
   export default {
-    name: "codigo-toggle",
+    name: "ten-toggle",
     props: {
       id: {
         type: String,

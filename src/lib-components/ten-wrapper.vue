@@ -1,6 +1,6 @@
 <script>
   export default {
-    name: "codigo-wrapper",
+    name: "ten-wrapper",
     render(createElement, context) {
       return this.$slots.default;
     },
