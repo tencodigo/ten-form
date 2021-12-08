@@ -8,6 +8,7 @@
   "browser": "dist/ten-form.esm.js",
   "module": "dist/ten-form.esm.js",
   "unpkg": "dist/ten-form.min.js",
+  "repository": "https://github.com/tensouth/ten-form",
   "files": [
     "dist/*",
     "src/**/*.vue"
