@@ -1,3 +1,12 @@
+## [0.3.1](https://github.com/tensouth/ten-form/compare/v0.3.0...v0.3.1) (2021-12-11)
+
+
+### Bug Fixes
+
+* not packaging dist folder ([d7c0b7d](https://github.com/tensouth/ten-form/commit/d7c0b7daad8cebfb354b9a2246ac7e1eec06a822))
+
+
+
 # [0.3.0](https://github.com/tensouth/ten-form/compare/v0.2.0...v0.3.0) (2021-12-11)
 
 
