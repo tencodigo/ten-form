@@ -1,4 +1,13 @@
-# 0.2.0 (2021-12-11)
+# [0.3.0](https://github.com/tensouth/ten-form/compare/v0.2.0...v0.3.0) (2021-12-11)
+
+
+### Features
+
+* bump version ([6192d92](https://github.com/tensouth/ten-form/commit/6192d922c1ff72dcbff81167e91c251fc426263f))
+
+
+
+# [0.2.0](https://github.com/tensouth/ten-form/compare/13e3be3c8ea8700a90e980abb7381c4abad2907e...v0.2.0) (2021-12-11)
 
 
 ### Bug Fixes
