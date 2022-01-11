@@ -1,7 +1,7 @@
 <template>
   <div class="ten-toggle form-control">
     <div class="toggle-label" v-if="title">{{title}}</div>
-    <label class="toggle-container" :class="type" :for="id">
+    <label class="toggle-container" :class="subclass||'round'" :for="id">
       <input :id="id" type="checkbox" class="real-checkbox" v-model="content" :true-value="trueValue" :false-value="falseValue" @change="handleInput">
       <div class="toggle-button"></div>
     </label>
@@ -37,9 +37,8 @@
         type: String
       },
 
-      type: {
-        type:String,
-        default: 'round'
+      subclass: {
+        type:String
       },
       trueValue: {
         type:[String,Boolean],

@@ -231,18 +231,18 @@ export default baseMixins.extend({
       else if (Array.isArray(messages)) return messages
       else return [messages]
     },
-    /** @public */
+    /** @dev */
     reset () {
       this.isResetting = true
       this.internalValue = Array.isArray(this.internalValue)
         ? []
         : undefined
     },
-    /** @public */
+    /** @dev */
     resetValidation () {
       this.isResetting = true
     },
-    /** @public */
+    /** @dev */
     validate (force = false, value?: any): boolean {
       const errorBucket = []
       value = value || this.internalValue

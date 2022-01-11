@@ -64,8 +64,8 @@
       },
 
       length: {
-        type: Boolean,
-        default: false
+        type: Number,
+        default: undefined
       },
       type: {
         type: String,
@@ -101,6 +101,11 @@
       step() {
         if(this.type==='number') return "any";
         return null;
+      }
+    },
+    watch: {
+      value:function(v) {
+        this.content = this.value;
       }
     }
   }

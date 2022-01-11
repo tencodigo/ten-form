@@ -10,6 +10,7 @@
       :tabindex="tabindex"
       :placeholder="placeHolder || title || id"
       :value="content"
+      :maxlength="length"
       @input="handleInput($event.target.value)"
       :class="controlClass"
       ref="area"
@@ -65,6 +66,10 @@
         default: 'form-control'
       },
 
+      length: {
+        type: Number,
+        default: undefined
+      },
       autoSize: {
         type: Boolean,
         default: true
