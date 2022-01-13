@@ -1,3 +1,18 @@
+# [0.4.0](https://github.com/tensouth/ten-form/compare/v0.3.1...v0.4.0) (2022-01-13)
+
+
+### Bug Fixes
+
+* full file names for build ([506922b](https://github.com/tensouth/ten-form/commit/506922b8d36b86bf85aedfa90533dafee81598e5))
+
+
+### Features
+
+* add form json source ([a8da7a9](https://github.com/tensouth/ten-form/commit/a8da7a9b93a16c560171f2b18db708d7e724b648))
+* add ten-field ([872ce1c](https://github.com/tensouth/ten-form/commit/872ce1c1a730800f7995d4d6bac3754d5d2fc739))
+
+
+
 ## [0.3.1](https://github.com/tensouth/ten-form/compare/v0.3.0...v0.3.1) (2021-12-11)
 
 
