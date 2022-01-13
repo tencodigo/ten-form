@@ -1,5 +1,6 @@
 <template>
   <span>
+    <ten-layout :id="id" v-if="type==='layout'" :fields="fields"></ten-layout>
     <ten-input :id="id"
                :title="title"
                :place-holder="placeHolder"
@@ -66,10 +67,11 @@ import TenToggle from "./ten-toggle";
 import TenSelect from "./ten-select";
 import TenInput from "./ten-input";
 import TenWrapper from "./ten-wrapper";
+import TenLayout from "./ten-layout";
 
 export default {
   name: "ten-field",
-  components: {TenTextarea, TenToggle, TenSelect, TenInput},
+  components: { TenLayout, TenTextarea, TenToggle, TenSelect, TenInput},
   extends: TenWrapper,
   props: {
     id: {
@@ -152,7 +154,11 @@ export default {
     size: {
       type: Number,
       default: undefined
-    }
+    },
+
+    fields: {
+      type: Array
+    },
   },
   methods: {
     handleInput (value) {
@@ -175,7 +181,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-
-</style>

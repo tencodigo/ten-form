@@ -1,14 +1,14 @@
 <template>
   <form :class="classes">
-    <ten-field id="i1" title="Test Text" type="text" v-model="content1"></ten-field>
-    <ten-field id="i2" title="Test Number" type="number"></ten-field>
-    <ten-field id="i3" title="Test Email" type="email"></ten-field>
-    <ten-field id="i4" title="Test RO" type="text" v-model="content1" :readonly="true"></ten-field>
-    <ten-field id="i5" title="Test 5 Very long long long long long long label" type="text"></ten-field>
-    <ten-field id="i6" title="Test 6" type="text" :required="true"></ten-field>
-    <ten-field id="s1" title="Select 1" type="select" :options="options" place-holder="Select one..." v-model="s1Value"></ten-field>
-    <ten-field id="t1" v-model="checkValue" type="toggle" title="Toggle 1"></ten-field>
-    <ten-field id="ta1" title="Text Area" type="textarea" v-model="contentTextArea"></ten-field>
+    <ten-field v-for="field in fields"
+               :id="field.id"
+               :title="field.title"
+               :type="field.type"
+               :place-holder="field.placeHolder"
+               :options="field.options || []"
+               :fields="field.fields || []"
+               :readonly="field.readOnly==='true' || field.readOnly === true"
+               :required="field.required==='true' || field.required === true"></ten-field>
   </form>
 </template>
 
@@ -31,6 +31,9 @@ export default {
     compact: {
       type: Boolean,
       default: true
+    },
+    fields: {
+      type: Array
     }
   },
   data() {
