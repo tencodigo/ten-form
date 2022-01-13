@@ -14,7 +14,6 @@
 </template>
 
 <script>
-import TenField from "./ten-field";
 export default {
   name: "ten-layout",
   components:
