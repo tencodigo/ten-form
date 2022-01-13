@@ -18,7 +18,7 @@ import TenInput from "./ten-input.vue";
 import TenSelect from "./ten-select.vue";
 import TenToggle from "./ten-toggle.vue";
 import TenTextarea from "./ten-textarea.vue";
-import TenField from "./ten-field";
+import TenField from "./ten-field.vue";
 export default {
   name: 'ten-form',
   components: { TenField, TenTextarea, TenToggle, TenSelect, TenInput},

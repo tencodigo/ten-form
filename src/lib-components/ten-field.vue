@@ -62,12 +62,12 @@
 </template>
 
 <script>
-import TenTextarea from "./ten-textarea";
-import TenToggle from "./ten-toggle";
-import TenSelect from "./ten-select";
-import TenInput from "./ten-input";
-import TenWrapper from "./ten-wrapper";
-import TenLayout from "./ten-layout";
+import TenTextarea from "./ten-textarea.vue";
+import TenToggle from "./ten-toggle.vue";
+import TenSelect from "./ten-select.vue";
+import TenInput from "./ten-input.vue";
+import TenWrapper from "./ten-wrapper.vue";
+import TenLayout from "./ten-layout.vue";
 
 export default {
   name: "ten-field",
