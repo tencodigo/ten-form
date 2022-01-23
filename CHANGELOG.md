@@ -1,3 +1,12 @@
+## [0.4.2](https://github.com/tensouth/ten-form/compare/v0.4.1...v0.4.2) (2022-01-23)
+
+
+### Bug Fixes
+
+* remove unused data fields ([be46e60](https://github.com/tensouth/ten-form/commit/be46e600ebb81f66deb19d72ed2905dbe48091ce))
+
+
+
 ## [0.4.1](https://github.com/tensouth/ten-form/compare/v0.4.0...v0.4.1) (2022-01-23)
 
 
