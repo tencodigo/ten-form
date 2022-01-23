@@ -1,3 +1,13 @@
+## [0.4.1](https://github.com/tensouth/ten-form/compare/v0.4.0...v0.4.1) (2022-01-23)
+
+
+### Bug Fixes
+
+* bad reference ([adf64f1](https://github.com/tensouth/ten-form/commit/adf64f15e247855beb98101dc323b11a5b2c7b0e))
+* did not register all components ([803fe27](https://github.com/tensouth/ten-form/commit/803fe2746c41ab68786968c8c3a2e782515f8a82))
+
+
+
 # [0.4.0](https://github.com/tensouth/ten-form/compare/v0.3.1...v0.4.0) (2022-01-13)
 
 
