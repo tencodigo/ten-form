@@ -34,7 +34,6 @@
     "@rollup/plugin-replace": "^3.0.1",
     "babel": "^6.23.0",
     "cross-env": "^7.0.3",
-    "dart-sass": "^1.25.0",
     "minimist": "^1.2.5",
     "node-sass": "^7.0.1",
     "rollup-plugin-babel": "^4.4.0",
