@@ -55,8 +55,5 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-vue": "^6.0.0",
     "vue": "^3.0.0"
-  },
-  "engines": {
-    "yarn": "^1.22.17"
   }
 }
