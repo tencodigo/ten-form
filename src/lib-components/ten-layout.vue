@@ -1,7 +1,7 @@
 <template>
-<div class="row" :id="id">
+<div class="ten-row" :id="id">
   <ten-field v-for="field in fields"
-             class="col"
+             class="ten-col"
              :id="field.id"
              :title="field.title"
              :type="field.type"
@@ -29,12 +29,12 @@ export default {
 };
 </script>
 
-<style>
-.row {
+<style lang="scss">
+.ten-row {
   display: flex;
   width: 100%;
 }
-.col {
+.ten-col {
   width: 100%;
 }
 </style>

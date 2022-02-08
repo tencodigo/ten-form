@@ -5,7 +5,8 @@ import vue from 'rollup-plugin-vue';
 import alias from '@rollup/plugin-alias';
 import commonjs from '@rollup/plugin-commonjs';
 import replace from '@rollup/plugin-replace';
-import babel from 'rollup-plugin-babel';
+import babel from '@rollup/plugin-babel';
+import bundleScss from 'rollup-plugin-bundle-scss';
 import { terser } from 'rollup-plugin-terser';
 import minimist from 'minimist';
 
@@ -33,16 +34,20 @@ const baseConfig = {
     replace: {
       'process.env.NODE_ENV': JSON.stringify('production'),
       'process.env.ES_BUILD': JSON.stringify('false'),
+      preventAssignment:true
     },
     vue: {
-      css: true,
+      preprocessStyles: false,
       template: {
         isProduction: true,
-      },
+      }
     },
     babel: {
       exclude: 'node_modules/**',
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
+      plugins: [
+        ["@babel/plugin-proposal-decorators", { "legacy": true }]
+      ]
     },
   },
 };
@@ -81,6 +86,7 @@ if (!argv.format || argv.format === 'es') {
       }),
       ...baseConfig.plugins.preVue,
       vue(baseConfig.plugins.vue),
+      bundleScss(),
       babel({
         ...baseConfig.plugins.babel,
         presets: [
@@ -120,6 +126,7 @@ if (!argv.format || argv.format === 'cjs') {
           optimizeSSR: true,
         },
       }),
+      bundleScss(),
       babel(baseConfig.plugins.babel),
       commonjs(),
     ],
@@ -143,6 +150,7 @@ if (!argv.format || argv.format === 'iife') {
       replace(baseConfig.plugins.replace),
       ...baseConfig.plugins.preVue,
       vue(baseConfig.plugins.vue),
+      bundleScss(),
       babel(baseConfig.plugins.babel),
       commonjs(),
       terser({

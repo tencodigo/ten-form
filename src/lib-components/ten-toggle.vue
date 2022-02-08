@@ -74,69 +74,67 @@
     --toggle-height: 20px;
     --toggle-radius: 0;
   }
-
-  .toggle-container.round {
-    --toggle-radius: 30px;
-  }
-
-  .toggle-label {
-    font-size: 12px;
-    color: #aaa;
-    padding-top: .1rem;
-    padding-bottom: .1rem;
-  }
-
-  .toggle-container{
-    display: inline-block;
-    width: var(--toggle-width);
-    height: var(--toggle-height);
-    border: 3px solid #bfbebe;
-    border-radius: var(--toggle-radius);
-    position: relative;
-    cursor: pointer;
-    background-color: #f5f2f2;
-    transition: border-color 300ms;
-
-    span {
-      display: block;
+  .ten-toggle {
+    .toggle-container.round {
+      --toggle-radius: 30px;
     }
 
-    .real-checkbox{
-      position: absolute;
-      clip: rect(0,0,0,0);
+    .toggle-label {
+      font-size: 12px;
+      color: #aaa;
+      padding-top: .1rem;
+      padding-bottom: .1rem;
+    }
 
-      & + .toggle-button{
+    .toggle-container{
+      display: inline-block;
+      width: var(--toggle-width);
+      height: var(--toggle-height);
+      border: 3px solid #bfbebe;
+      border-radius: var(--toggle-radius);
+      position: relative;
+      cursor: pointer;
+      background-color: #f5f2f2;
+      transition: border-color 300ms;
+
+      span {
+        display: block;
+      }
+
+      .real-checkbox{
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border-radius: var(--toggle-radius);
-        transition: all 300ms;
+        clip: rect(0,0,0,0);
 
-        &::before{
-          content: '';
-          cursor: pointer;
-          display: inline-block;
-          width: var(--toggle-height);
-          height: var(--toggle-height);
-          background-color: white;
+        & + .toggle-button{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
           border-radius: var(--toggle-radius);
-          box-shadow: 1px 1px 3px rgba(0,0,0,0.5) ;
-          transition: all 300ms ease-in-out;
+          transition: all 300ms;
+
+          &::before{
+            content: '';
+            cursor: pointer;
+            display: inline-block;
+            width: var(--toggle-height);
+            height: var(--toggle-height);
+            background-color: white;
+            border-radius: var(--toggle-radius);
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.5) ;
+            transition: all 300ms ease-in-out;
+          }
+
         }
 
-      }
-
-      &:checked + .toggle-button{
-        background-color: #32db64;
-        &::before{
-          margin-left: var(--toggle-height);
+        &:checked + .toggle-button{
+          background-color: #32db64;
+          &::before{
+            margin-left: var(--toggle-height);
+          }
         }
       }
     }
-  }
-  .toggle-container.round {
-
   }
 </style>
