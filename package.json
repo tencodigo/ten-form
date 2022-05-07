@@ -28,13 +28,7 @@
     "build": "vite build",
     "serve": "vite preview",
     "lint": "eslint ./src --ext .vue,.js",
-    "lint-fix": "eslint --fix ./src --ext .vue,.js",
-    "prepare": "husky install"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "lint-fix": "eslint --fix ./src --ext .vue,.js"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.4",
