@@ -1,8 +1,8 @@
 name: Vue Component Package
 on:
-  [push]
+  push:
     branches: main
-  [pull_request]
+  pull_request:
 
 jobs:
   build:
