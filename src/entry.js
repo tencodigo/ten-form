@@ -12,7 +12,7 @@ const install = function installTenForm(Vue) {
 };
 
 // Create module definition for Vue.use()
-const plugin = {
+export const plugin = {
   install,
 };
 
@@ -31,7 +31,9 @@ if ('false' === process.env.ES_BUILD) {
   }
 }
 // Default export is library as a whole, registered via Vue.use()
-export default plugin;
+//export default plugin;
+
+//export const plugin = () =>{}
 
 // To allow individual component use, export components
 // each can be registered via Vue.component()
