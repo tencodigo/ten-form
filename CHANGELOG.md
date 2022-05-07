@@ -1,3 +1,20 @@
+# [0.5.0](https://github.com/tensouth/ten-form/compare/v0.4.2...v0.5.0) (2022-05-07)
+
+
+### Bug Fixes
+
+* fire build for pull request ([a548c32](https://github.com/tensouth/ten-form/commit/a548c32315b0fd162bbf942c4564f44218ee0e50))
+* remove husky ([3f51404](https://github.com/tensouth/ten-form/commit/3f5140456a8081e9a55b5937b7e65602034d1e6f))
+* use yarn ([e4d2981](https://github.com/tensouth/ten-form/commit/e4d298109b74ca690f364477f76e25f67efbc54d))
+
+
+### Features
+
+* repackage ([8fcaf1e](https://github.com/tensouth/ten-form/commit/8fcaf1e63f05f65fadd7f8264ca7eb5dc0dd01bd))
+* vue3 compiling ([5ef90f0](https://github.com/tensouth/ten-form/commit/5ef90f07b3538c78a89dce5ee9cc40740873c44a))
+
+
+
 ## [0.4.2](https://github.com/tensouth/ten-form/compare/v0.4.1...v0.4.2) (2022-01-23)
 
 
