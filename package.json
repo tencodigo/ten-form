@@ -4,56 +4,49 @@
   "author": "Chris Doty",
   "license": "MIT",
   "description": "",
-  "main": "dist/ten-form.ssr.js",
-  "browser": "dist/ten-form.esm.js",
-  "module": "dist/ten-form.esm.js",
-  "unpkg": "dist/ten-form.min.js",
-  "repository": "https://github.com/tensouth/ten-form",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tensouth/ten-form.git"
+  },
+  "main": "./dist/ten-form.cjs",
+  "module": "./dist/ten-form.mjs",
+  "jsdelivr": "./dist/ten-form.js",
+  "unpkg": "./dist/ten-form.js",
   "files": [
-    "dist/*",
-    "src/**/*.vue"
+    "/dist",
+    "README.md"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/ten-form.mjs",
+      "require": "./dist/ten-form.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
   "scripts": {
-    "serve": "vue-cli-service serve dev/serve.js --port=8182",
-    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
-    "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
-    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
-    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
-  },
-  "dependencies": {
-    "@rollup/plugin-babel": "^5.3.0",
-    "bootstrap": "^4.5.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.17.0",
-    "@babel/plugin-proposal-class-properties": "^7.16.7",
-    "@babel/plugin-proposal-decorators": "^7.17.0",
-    "@babel/preset-env": "^7.16.11",
-    "@rollup/plugin-alias": "^3.1.9",
-    "@rollup/plugin-commonjs": "^21.0.1",
-    "@rollup/plugin-replace": "^3.0.1",
-    "babel": "^6.23.0",
-    "cross-env": "^7.0.3",
-    "minimist": "^1.2.5",
-    "node-sass": "^7.0.1",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-bundle-scss": "^0.1.3",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-vue": "^6.0.0",
-    "sass": "^1.49.7",
-    "sass-loader": "^12.4.0",
-    "vue": "^3.0.0"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "eslint ./src --ext .vue,.js",
+    "lint-fix": "eslint --fix ./src --ext .vue,.js",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.4",
+    "@vue/compiler-sfc": "^3.0.5",
+    "eslint": "^7.30.0",
+    "eslint-plugin-vue": "^7.13.0",
+    "sass": "^1.35.2",
+    "sass-loader": "10.1.1",
+    "vite": "^2.8.3",
+    "vue": "^3.1.4"
+  },
   "peerDependencies": {
-    "rollup": "^2.67.1",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-vue": "^6.0.0",
-    "vue": "^3.0.0"
+    "vue": "^3.0.5"
   }
 }
