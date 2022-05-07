@@ -1,0 +1,46 @@
+{
+  "name": "ten-form",
+  "version": "0.4.2",
+  "author": "Chris Doty",
+  "license": "MIT",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tensouth/ten-form.git"
+  },
+  "main": "./dist/ten-form.cjs",
+  "module": "./dist/ten-form.mjs",
+  "jsdelivr": "./dist/ten-form.js",
+  "unpkg": "./dist/ten-form.js",
+  "files": [
+    "/dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/ten-form.mjs",
+      "require": "./dist/ten-form.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "eslint ./src --ext .vue,.js",
+    "lint-fix": "eslint --fix ./src --ext .vue,.js"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.4",
+    "@vue/compiler-sfc": "^3.0.5",
+    "eslint": "^7.30.0",
+    "eslint-plugin-vue": "^7.13.0",
+    "sass": "^1.35.2",
+    "sass-loader": "10.1.1",
+    "vite": "^2.8.3",
+    "vue": "^3.1.4"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.5"
+  }
+}
