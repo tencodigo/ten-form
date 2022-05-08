@@ -11,13 +11,13 @@ const install = function installTenForm(Vue) {
   });
 };
 
-function Plugin(data) {
+function tenForm(data) {
 }
-Plugin.prototype.install = install;
+tenForm.prototype.install = install;
 
 // Create module definition for Vue.use()
 export default {
-  Plugin
+  tenForm
 };
 
 // To auto-install on non-es builds, when vue is found
