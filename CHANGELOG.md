@@ -1,3 +1,12 @@
+## [0.5.5](https://github.com/tensouth/ten-form/compare/v0.5.4...v0.5.5) (2022-05-08)
+
+
+### Bug Fixes
+
+* install not working ([b80b561](https://github.com/tensouth/ten-form/commit/b80b56163d5d9297e6d8c74b9799672fe889a4b8))
+
+
+
 ## [0.5.4](https://github.com/tensouth/ten-form/compare/v0.5.3...v0.5.4) (2022-05-08)
 
 
