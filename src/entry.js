@@ -16,9 +16,7 @@ function tenForm(data) {
 tenForm.prototype.install = install;
 
 // Create module definition for Vue.use()
-export default {
-  tenForm
-};
+export default tenForm;
 
 // To auto-install on non-es builds, when vue is found
 // eslint-disable-next-line no-redeclare
