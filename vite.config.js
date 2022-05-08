@@ -38,6 +38,7 @@ const config = defineConfig({
         globals: {
           vue: 'Vue',
         },
+        exports: 'named'
       },
     }
   },
