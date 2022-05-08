@@ -2,19 +2,19 @@
 import * as components from '@/lib-components/index';
 console.log(components);
 
-function tenForm(data) {
+function Plugin(data) {
 }
-tenForm.prototype.install = function(Vue) {
+Plugin.prototype.install = function(Vue) {
   console.log('installed');
-  if (install.installed) return;
-  install.installed = true;
+  if (Plugin.installed) return;
+  Plugin.installed = true;
   Object.entries(components).forEach(([componentName, component]) => {
     Vue.component(componentName, component);
   });
 };
 
 // Create module definition for Vue.use()
-export default tenForm;
+export default Plugin;
 
 // To auto-install on non-es builds, when vue is found
 // eslint-disable-next-line no-redeclare
