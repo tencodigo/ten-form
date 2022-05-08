@@ -1,3 +1,12 @@
+## [0.5.1](https://github.com/tensouth/ten-form/compare/v0.5.0...v0.5.1) (2022-05-08)
+
+
+### Bug Fixes
+
+* plugin functionality not initializing ([55ba682](https://github.com/tensouth/ten-form/commit/55ba682ab3dce32d893d17eda158e5ba0069eb6d))
+
+
+
 # [0.5.0](https://github.com/tensouth/ten-form/compare/v0.4.2...v0.5.0) (2022-05-07)
 
 
