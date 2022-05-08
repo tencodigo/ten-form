@@ -4,6 +4,7 @@ console.log(components);
 
 // install function executed by Vue.use()
 const install = function installTenForm(Vue) {
+  console.log('installed');
   if (install.installed) return;
   install.installed = true;
   Object.entries(components).forEach(([componentName, component]) => {
