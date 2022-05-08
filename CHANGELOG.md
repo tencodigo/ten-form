@@ -1,3 +1,12 @@
+## [0.5.2](https://github.com/tensouth/ten-form/compare/v0.5.1...v0.5.2) (2022-05-08)
+
+
+### Bug Fixes
+
+* still no entry ([aa5d5cc](https://github.com/tensouth/ten-form/commit/aa5d5ccf2df6d90774a3ee9d35637a261c2ce501))
+
+
+
 ## [0.5.1](https://github.com/tensouth/ten-form/compare/v0.5.0...v0.5.1) (2022-05-08)
 
 
