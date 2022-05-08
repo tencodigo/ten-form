@@ -2,8 +2,9 @@
 import * as components from '@/lib-components/index';
 console.log(components);
 
-// install function executed by Vue.use()
-const install = function installTenForm(Vue) {
+function tenForm(data) {
+}
+tenForm.prototype.install = function(Vue) {
   console.log('installed');
   if (install.installed) return;
   install.installed = true;
@@ -11,10 +12,6 @@ const install = function installTenForm(Vue) {
     Vue.component(componentName, component);
   });
 };
-
-function tenForm(data) {
-}
-tenForm.prototype.install = install;
 
 // Create module definition for Vue.use()
 export default tenForm;
