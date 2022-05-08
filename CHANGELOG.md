@@ -1,3 +1,12 @@
+## [0.5.3](https://github.com/tensouth/ten-form/compare/v0.5.2...v0.5.3) (2022-05-08)
+
+
+### Bug Fixes
+
+* try using default entry ([f765e05](https://github.com/tensouth/ten-form/commit/f765e05569439341270f2a43c89927df8e591188))
+
+
+
 ## [0.5.2](https://github.com/tensouth/ten-form/compare/v0.5.1...v0.5.2) (2022-05-08)
 
 
