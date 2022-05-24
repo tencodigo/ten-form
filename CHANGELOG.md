@@ -1,3 +1,12 @@
+## [0.5.7](https://github.com/tensouth/ten-form/compare/v0.5.6...v0.5.7) (2022-05-22)
+
+
+### Bug Fixes
+
+* lower camel case component export names ([05b9f90](https://github.com/tensouth/ten-form/commit/05b9f90d41aaab17904f533cc0bf002fc5ec46cd))
+
+
+
 ## [0.5.6](https://github.com/tensouth/ten-form/compare/v0.5.5...v0.5.6) (2022-05-08)
 
 
