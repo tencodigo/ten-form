@@ -14,6 +14,7 @@
   "unpkg": "./dist/ten-form.js",
   "files": [
     "/dist",
+    "/src",
     "README.md"
   ],
   "exports": {
