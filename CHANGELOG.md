@@ -1,3 +1,12 @@
+## [0.5.8](https://github.com/tensouth/ten-form/compare/v0.5.7...v0.5.8) (2022-05-24)
+
+
+### Bug Fixes
+
+* add src to package ([a3e9c34](https://github.com/tensouth/ten-form/commit/a3e9c34fb4fb9436aa15c690ba8717da6ad1bc40))
+
+
+
 ## [0.5.7](https://github.com/tensouth/ten-form/compare/v0.5.6...v0.5.7) (2022-05-22)
 
 
